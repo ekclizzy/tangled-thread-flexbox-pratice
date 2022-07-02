@@ -1,0 +1,223 @@
+/* imports fonts */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,400;0,700;1,300&display=swap');
+
+/* general styles */
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin:0;
+    padding:0;
+    background-color: #FEF9F1;
+    
+}
+
+/* header styles */
+header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: #FEF9F1;
+    width: 100%;
+    min-height: auto;
+    opacity: 95%;    
+}
+
+header:hover {
+    opacity: 100%;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-family: 'Abril Fatface', serif;
+    font-size: 2.5rem;
+    padding-left: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    padding-right: 2rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+    color: darkgoldenrod;
+}
+
+header nav ul li a:active {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 861px) {
+    header nav ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 0;
+        margin: 0 1.5rem 1rem 1rem;
+    }
+}
+
+@media screen and (max-width: 239px) {
+    header h1 {
+        font-size: 1.75rem;
+    }
+    header nav ul li a {
+        font-size: 0.75rem;
+    }
+}
+
+/* main body styles */
+main {
+    z-index: 5;
+    margin: 7.25rem auto 0 auto;
+    padding: 0;
+    max-width: 120rem;
+    opacity: 95%;   
+}
+
+@media screen and (max-width: 657px) {
+    main {
+        margin-top: 10rem;
+    }
+}
+
+@media screen and (max-width: 378px) {
+    main {
+        margin-top: 13rem;
+    }
+}
+
+/* about section styles */
+#about-section {
+    background-image: url(../images/pexels-caroline-feelgood-3654775-medium.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: stretch;
+    margin-bottom: 2rem;
+}
+
+.about-banner-text {
+    width: inherent;
+    max-width: 22rem;
+    height: auto;
+    padding: 2rem;
+    margin: 1rem;
+    color: #FEF9F1;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* product section styles */
+
+#product-section {
+    background-color: #DECFB8;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+#product-section .card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#product-section .card-row .product-card {
+    height: auto;
+    text-align: center;
+    flex: 2 1 30%;
+    line-height: 0;
+    max-width: 40rem;
+}
+
+#product-section .card-row .product-card:hover {
+    background-color: #FEF9F1;
+    color: #CCB99B;
+}
+
+#product-section .card-row .product-card img {
+    max-width: 40rem;
+    width: 100%;
+    height: 11rem;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 975px) {
+    #product-section .card-row .product-card {
+        flex: 1 1 40%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #product-section .card-row .product-card {
+        flex: 1 1 100%;
+    }
+}
+
+/* staff section styles */
+
+.italic {
+    font-style:italic;
+}
+
+#staff-section {
+    margin-bottom: 2rem;
+}
+
+#staff-section .card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+#staff-section .card-row .staff-card {
+    max-width: 40rem;
+    min-width: 15rem;
+    height: auto;
+    text-align: center;
+    flex: 2 1 30%;
+    line-height: 0;
+}
+
+#staff-section .card-row .staff-card img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+}
+
+/* footer styles */
+footer {
+    margin: 0 auto 0 auto;
+    padding: 0;
+    max-width: 120rem;
+    opacity: 95%;   
+    font-size: 0.9rem;
+    color: #CCB99B;
+}
